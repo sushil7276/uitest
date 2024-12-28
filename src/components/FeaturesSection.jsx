@@ -38,7 +38,9 @@ const FeaturesSection = () => {
                   Automatically with Our Advanced Features.
                </p>
             </div>
-            <div>
+            <div className='d-flex flex-wrap justify-content-between w-100'>
+               <ExamSchedulingCard />
+               <ExamSchedulingCard />
                <ExamSchedulingCard />
             </div>
          </div>

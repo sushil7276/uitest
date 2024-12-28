@@ -118,13 +118,55 @@
    filter: brightness(0);
 }
 
-.arrow {
-}
+/* Arrow Button */
 .arrow-btn {
-   margin-top: 1rem;
-   border-radius: 50%;
-   /* padding: 3rem; */
-   width: 4rem;
-   height: 4rem;
-   box-shadow: 1px 1px 1px 1px #e9e9e9;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.arrow-btn::before,
+.arrow-btn::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 100%;
+   z-index: 2;
+}
+
+.arrow-btn::before {
+   width: 70px;
+   height: 70px;
+   border: 1px solid rgb(206, 206, 206);
+   background-image: linear-gradient(rgb(255, 255, 255), rgb(222, 222, 222));
+   animation: circle-size 0.8s linear infinite alternate;
+}
+
+.arrow-btn::after {
+   width: 55px;
+   height: 55px;
+   border: 1px solid rgb(206, 206, 206);
+   background-color: #ffffff;
+}
+
+.arrow-icon {
+   box-sizing: border-box;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(5);
+   font-size: 0.4rem;
+   color: #7797fe;
+   z-index: 3;
+}
+
+.white-sm-btn {
+   padding: 0.2rem 0.8rem;
+   background-color: white;
+   border: 2px solid rgba(160, 149, 149, 0.249);
+   box-shadow: 0px 0px 2px gray;
+   border-radius: 10px;
 }
