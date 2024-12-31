@@ -1,8 +1,9 @@
+import AiFeatureSection from "./AiFeatureSection";
 import ExamSchedulingCard from "./ExamSchedulingCard";
 
 const FeaturesSection = () => {
    return (
-      <section className='container d-flex flex-column justify-content-start align-items-center '>
+      <section className='container d-flex flex-column justify-content-start align-items-center'>
          <div
             className='d-flex flex-column justify-content-start align-items-center mb-3 w-75'
             style={{ marginTop: "4rem" }}
@@ -26,7 +27,7 @@ const FeaturesSection = () => {
                borderRadius: "15px",
             }}
          >
-            <div className='w-50 border-primary'>
+            <div className='w-50'>
                <h1 className='text-start' style={{ fontSize: "1.5rem" }}>
                   Automatically Exam scheduling
                </h1>
@@ -38,12 +39,15 @@ const FeaturesSection = () => {
                   Automatically with Our Advanced Features.
                </p>
             </div>
-            <div className='d-flex flex-wrap justify-content-between w-100'>
+            <div className='d-flex flex-wrap justify-content-between gap-4 w-100'>
                <ExamSchedulingCard />
                <ExamSchedulingCard />
                <ExamSchedulingCard />
             </div>
          </div>
+         <div className='Exam-scheduling-effect'></div>
+         {/* Ai Features Section */}
+         <AiFeatureSection />
       </section>
    );
 };

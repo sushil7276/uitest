@@ -170,3 +170,24 @@
    box-shadow: 0px 0px 2px gray;
    border-radius: 10px;
 }
+
+.Exam-scheduling-effect {
+   height: 20rem;
+   width: 100%;
+   position: relative;
+   top: -20rem;
+   background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+   );
+   /* left: 50%; */
+   /* transform: translate(-50%, -50%) scale(5); */
+}
+
+/* Feature section */
+.featureImage {
+   margin-top: 1rem;
+   height: 10rem;
+   width: 20rem;
+}

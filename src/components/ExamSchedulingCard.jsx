@@ -10,6 +10,7 @@ const ExamSchedulingCard = () => {
             boxShadow: "0px 0px 0px 3px #ecf6ff",
             width: "23rem",
             borderRadius: "15px",
+            height: "25rem",
          }}
       >
          {/* Timing date Details Start */}

@@ -3,7 +3,16 @@ import { LuSquare } from "react-icons/lu";
 
 const MainStartSection = () => {
    return (
-      <section className='text-center'>
+      <section
+         className='text-center'
+         style={{
+            height: "60rem",
+            overflow: "hidden",
+            background:
+               "linear-gradient(0deg, rgba(77, 127, 194,1) 0%, rgba(255,255,255,0) 44%)",
+            borderRadius: "15px",
+         }}
+      >
          <div className='container d-flex flex-column justify-content-start align-items-center'>
             <p className='text-uppercase text-primary mb-2 mt-2'>
                Product & Management Exam Tool
@@ -33,7 +42,10 @@ const MainStartSection = () => {
             <img
                src={webImg}
                alt='webImg'
-               style={{ objectFit: "contain", borderRadius: "15px" }}
+               style={{
+                  objectFit: "contain",
+                  borderRadius: "15px",
+               }}
             />
          </div>
       </section>
